@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 62.5%;
+  background-color: #e7e9e9;
+}
+
+.main {
+  width: 100%;
+  height: 300vh;
+}
+
+footer {
+  font-size: 1.75rem;
+  color: var(--color-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    top: 25vh;
+  }
+}
+
+@import "./header";
+@import "./color";
+@import "./slide";
+@import "./nav";
+@import "./card";
+@import "./sidebar";
+@import "./form";
+@import "./portfolio";
